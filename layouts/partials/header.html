@@ -1,15 +1,7 @@
 <header class="header" role="banner">
-  <figure class="avatar">
-    <a href="/"><img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Author.name }}" width="96" height="96"></a>
-  </figure>
-  <h1 class="site__name">{{ .Site.Author.name }}</h1>
-
-	{{ range .Site.Menus.main }}
-		{{ if .Page.Params.redirect_url }}
-			<a class="site__page" href="{{ .Page.Params.redirect_url }}">{{ .Name }}</a>
-		{{ else }}
-			<a class="site__page" href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a>
-		{{ end }}
-	{{ end }}
-
+    <div class="container">
+        <h1 class="site__name logo">
+            <a href="/">kaa.bz</a>
+        </h1>
+    </div>
 </header>

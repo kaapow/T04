@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
-  {{ partial "head.html" . }}
+{{ partial "head.html" . }}
 
-  <body class="{{ if .IsHome }}home{{ else }}single{{ end }}">
-
+<body class="bg-aquamarine ">
     {{ partial "header.html" . }}
+    {{ partial "navigation.html" . }}
+    {{ partial "colophon.html" . }}
+    <main class="main bg-off-white">
+        <div class="container">
+            {{ if .IsHome }}
+            {{ partial "header.html" . }}
+            {{else}}
+                {{ partial "headerPage.html" . }}
+                {{end}}
+                {{ block "main" . }}{{ end }}
 
-    <main class="main__content" role="main">
-      {{ block "main" . }}{{ end }}
+        </div>
     </main>
-
     {{ partial "footer.html" . }}
-    {{ partial "custom_footer.html" . }}
-    
-  </body>
+</body>
+
 </html>

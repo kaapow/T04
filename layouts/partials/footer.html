@@ -1,3 +1,47 @@
-<footer class="footer {{ if eq .Type "post" }}footer--single{{ end }}" role="contentinfo">
-  <small class="copyright">&copy; {{ .Date.Format "2006" }} <a href="/">{{ .Site.Author.name }}</a>. {{ .Site.Params.description | safeHTML }}</small>
+<footer class="footer light-blue">
+
+    <div class="container">
+
+        <p>Published on <a href="https://micro.blog">Micro.blog</a>. Typeset in Merriweather &amp; Archivo Narrow. </p>
+
+        <ul class="navlist light-grey footer">
+
+            <li>&copy; Khaled Abou Alfa</li>
+
+            <li><a href="https://www.kaa.bz/feed.xml">
+                    <i data-feather="rss"></i>
+                    <script>
+                        feather.replace({
+                            color: 'var(--00)',
+                            height: '18px',
+                            width: '18px'
+                        })
+
+                    </script>
+                </a></li>
+            <li><a href="https://pinboard.in/u:kaa">
+                    <i data-feather="globe"></i>
+                    <script>
+                        feather.replace({
+                            color: 'var(--00)',
+                            height: '18px',
+                            width: '18px'
+                        })
+
+                    </script>
+                </a></li>
+            <li><a href="https://twitter.com/kaa_pow">
+                    <i data-feather="twitter"></i>
+                    <script>
+                        feather.replace({
+                            color: 'var(--00)',
+                            height: '18px',
+                            width: '18px'
+                        })
+
+                    </script>
+                </a></li>
+        </ul>
+    </div>
+
 </footer>

@@ -1,5 +1,5 @@
-# Microblog with Jekyll
+# T04-Classic
 
-We'll add more information as it happens.
+This is my classic take on the blog design. It's a rehash of my older blog on Tumblr, except I've cleaned it all up, and it uses some new web frameworks (Skeleton and Feather Icons). 
 
-A project by Garth Braithwaite and Tim Smith.
+Also has Dark mode backed in as well. 
